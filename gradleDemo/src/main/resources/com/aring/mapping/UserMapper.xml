@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.aring.dao.UserMapper">  
+       
+    <resultMap type="com.aring.pojo.User" id="user">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="uname" jdbcType="VARCHAR" property="uname"/>
+        <result column="pwd" jdbcType="VARCHAR" property="pwd"/>
+    </resultMap>
+    
+    <select id="selectByPrimaryKey" resultMap="user" parameterType="java.lang.Integer">
+        select * from user where id = #{id}
+    </select>
+    
+    <select id="show" resultType="com.aring.pojo.User" >
+        select * from user
+    </select>
+    
+    <insert id="saveUser" parameterType="com.aring.pojo.User">
+        insert into user (uname,password) value (#{userName},#{password})
+    </insert>
+    <delete id="delete">
+        delete from user where id=#{id}
+    </delete>
+    <insert id="add">
+       	insert into user(uname,pwd) values(#{uname},#{pwd})
+    </insert>
+    <update id="upd">
+    	update user set uname=#{uname},pwd=#{pwd} where id=#{id}
+    </update>
+    
+    <select id="userLogin" resultMap="user" parameterType="com.aring.pojo.User">
+        select * from user where uname=#{userName} and password=#{password}
+    </select>
+    
+</mapper>  

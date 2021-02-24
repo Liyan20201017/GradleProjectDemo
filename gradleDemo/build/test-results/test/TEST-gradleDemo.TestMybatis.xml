@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gradleDemo.TestMybatis" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-22T05:54:25" hostname="ECVD3SM2SH77WES" time="2.596">
+  <properties/>
+  <testcase name="test" classname="gradleDemo.TestMybatis" time="2.596"/>
+  <system-out><![CDATA[sdf
+one
+]]></system-out>
+  <system-err><![CDATA[二月 22, 2021 1:54:25 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from class path resource [spring-mybatis.xml]
+二月 22, 2021 1:54:26 下午 org.springframework.context.support.GenericApplicationContext prepareRefresh
+信息: Refreshing org.springframework.context.support.GenericApplicationContext@6c51d1fe: startup date [Mon Feb 22 13:54:26 CST 2021]; root of context hierarchy
+二月 22, 2021 1:54:26 下午 org.springframework.beans.factory.config.PropertyPlaceholderConfigurer loadProperties
+信息: Loading properties file from class path resource [jdbc.propreties]
+二月 22, 2021 1:54:27 下午 com.alibaba.druid.pool.DruidDataSource info
+信息: {dataSource-1} inited
+]]></system-err>
+</testsuite>
