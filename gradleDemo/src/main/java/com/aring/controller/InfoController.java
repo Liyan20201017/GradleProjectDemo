@@ -58,12 +58,4 @@ public class InfoController {
 		return "add";
 	}
 
-	@RequestMapping("showadd")
-	public String a(User user, HttpServletRequest request, Model model) {
-		User info = iservice.getUserById(user.getId());
-		System.out.println(info.getUname());
-		model.addAttribute("user", info);
-		return "add";
-	}
-
 }
