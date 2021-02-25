@@ -56,6 +56,11 @@ public class InfoController {
 		model.addAttribute("user", info);
 		return "add";
 	}
+	
+	@RequestMapping("aa")
+	public String aa(User user, HttpServletRequest request, Model model) {
+		return "add";
+	}
 
 	@RequestMapping("bbb")
 	public String bbb(User user, HttpServletRequest request, Model model) {
