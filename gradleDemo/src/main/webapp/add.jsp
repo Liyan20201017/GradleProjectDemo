@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="add">
+	<form action="add"  method="post"  enctype="multipart/form-data">
 		姓名：<input name="uname"  value="${user.uname}">	<input type="hidden" name="id" value="${user.id}"><br>
 		密码：<input name="pwd"  value="${user.pwd}"><br>
 		<input type="submit"><br>

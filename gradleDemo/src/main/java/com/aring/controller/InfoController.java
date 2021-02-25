@@ -38,12 +38,12 @@ public class InfoController {
 	@RequestMapping("add")
 	public String add(User user) {
 		int res = 0;
+		System.out.println(user.getPwd() + user.getUname() + user.getId());
 		if (user.getId() == 0) {
 			res = iservice.add(user);
 		} else {
 			res = iservice.upd(user);
 		}
-
 		if (res > 0) {
 			return "redirect:index";
 		}
