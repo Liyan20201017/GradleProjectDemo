@@ -57,4 +57,9 @@ public class InfoController {
 		return "add";
 	}
 
+	@RequestMapping("bbb")
+	public String bbb(User user, HttpServletRequest request, Model model) {
+		return "add";
+	}
+
 }
